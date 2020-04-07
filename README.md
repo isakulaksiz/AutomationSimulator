@@ -5,10 +5,10 @@ Control an automation system according to an informal specification.
 ![](https://user-images.githubusercontent.com/18269686/60725343-63008f00-9f28-11e9-874f-698789c64a6f.png)
 The project consists of a physical 2D process simulation and a visualization. The components are
 
-There is a wagon that is moving left and right. It has a limited acceleration a which is given through the configuration.
-There are three proximity sensors: Left, middle and right. The proximity sensor triggers if the wagon is (at least partially) above it. The sensors are simulated to be ideal, i.e. they trigger immediately after detecting an object. – The proximity sensors are shown green when they are triggered.
-The user of the system can enable or disable positioning using a switch (which is shown as the checkbox on the top left of the screen).
-The simulation and visualization of the process are already implemented, but currently, the wagon will not move. The missing part is the Controller class, which has one method Update() and is intended to control the movement of the wagon:
+* There is a wagon that is moving left and right. It has a limited acceleration a which is given through the configuration.
+* There are three proximity sensors: Left, middle and right. The proximity sensor triggers if the wagon is (at least partially) above it. The sensors are simulated to be ideal, i.e. they trigger immediately after detecting an object. – The proximity sensors are shown green when they are triggered.
+* The user of the system can enable or disable positioning using a switch (which is shown as the checkbox on the top left of the screen).
+* The simulation and visualization of the process are already implemented, but currently, the wagon will not move. The missing part is the Controller class, which has one method Update() and is intended to control the movement of the wagon:
 ```
 1 public class Controller
 2 {
